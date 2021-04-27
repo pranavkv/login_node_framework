@@ -2,7 +2,7 @@ import { UserSession } from "Dao/UserSession";
 
 export class SessionHelper {
 
-    public static async "(sessionID: string): Promise<UserSession> {
+    public static async isValidSession(sessionID: string): Promise<UserSession> {
 
         let session = await this.validateSession(sessionID);
         return session;
